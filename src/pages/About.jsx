@@ -1,9 +1,9 @@
-import Header from "../components/header";
+
 
 function About() {
     return (
         
-            <Header />
+            <div></div>
     );
 }
 export default About;

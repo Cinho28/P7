@@ -1,9 +1,8 @@
-import Header from "../components/header";
 
 
 function Logement() {
     return (    
-            <Header />
+            <div></div>
     
     );
 }

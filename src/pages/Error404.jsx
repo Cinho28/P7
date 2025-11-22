@@ -1,8 +1,7 @@
-import Header from "../components/header";
 
 function Error404() {
     return (
-            <Header />
+           <main className=""></main>
 
     );
 }

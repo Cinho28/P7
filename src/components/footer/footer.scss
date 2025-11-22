@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixin" as *;
+
+.footer {
+    background-color: $secondary-color;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    &__container {
+        @include flex-center;
+        width: $container-width;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__logo-container {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    &__logo {
+        width: 130px;
+        height: 45px;
+    }
+    &__copyright {
+        font-family: $font;
+        font-size: 24px;
+        color: $white;
+        margin: 0;
+    }
+}

@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixin" as *;
+
+.card {
+    display: block;
+    border-radius: px-to-rem(10);
+    position: relative;
+    width: px-to-rem(340);
+    height: px-to-rem(340);
+
+    &__cover {
+        width: px-to-rem(340);
+        height: px-to-rem(340);
+        border-radius: px-to-rem(10);
+        object-fit: cover;
+    }
+    &__title {
+        font: px-to-rem(18) $font;
+
+        color: $white;
+        position: absolute;
+        font-size: large;
+        margin: 0;
+        z-index: 1;
+        bottom: px-to-rem(20);
+        left: px-to-rem(20);
+        width: 50%;
+        font-weight: bold;
+    }
+}

@@ -1,10 +1,17 @@
+@function px-to-rem($px) {
+    @return ($px / 16) * 1rem;
+}
+
 // Couleurs principales
 
 $primary-color: #ff6060;
 $secondary-color: #000000;
 $wrapper-background: #f5f5f5;
-$general-background: #ffffff;
+$white: #ffffff;
 
 //fontes
 
 $font: "montserrat", sans-serif;
+
+// sizing
+$container-width: px-to-rem(1240);

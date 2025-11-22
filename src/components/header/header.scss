@@ -1,14 +1,16 @@
-@use "../styles/variables" as v;
-@use "../styles/mixin" as mixin;
+@use "../../styles/variables" as *;
+@use "../../styles/mixin" as *;
 
 .header {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     margin-top: 3rem;
 
     height: 68px;
     &__container {
-        @include mixin.container-size;
+        display: flex;
+        align-items: center;
+        width: $container-width;
+        justify-content: space-between;
     }
     &__logo {
         width: 210px;
@@ -24,8 +26,8 @@
         gap: 4rem;
 
         &--link {
-            font-family: v.$font;
-            color: v.$secondary-color;
+            font-family: $font;
+            color: $secondary-color;
             text-decoration: none;
             font-size: 24px;
             font-weight: 500;

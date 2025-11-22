@@ -1,9 +1,23 @@
-@use "variables" as v;
+@use "../styles/variables" as *;
+@use "../styles/mixin" as *;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.home {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: $container-width;
+    width: 100%;
+    background-color: $wrapper-background;
+    border-radius: 25px;
+    margin: px-to-rem(43) 0 px-to-rem(50) 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: px-to-rem(60);
+    padding: px-to-rem(50) 0 px-to-rem(50) 0;
 }
