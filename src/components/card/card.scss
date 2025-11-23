@@ -5,11 +5,11 @@
     display: block;
     border-radius: px-to-rem(10);
     position: relative;
-    width: px-to-rem(340);
+    width: 100%;
     height: px-to-rem(340);
 
     &__cover {
-        width: px-to-rem(340);
+        width: 100%;
         height: px-to-rem(340);
         border-radius: px-to-rem(10);
         object-fit: cover;

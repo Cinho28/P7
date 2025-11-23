@@ -7,14 +7,14 @@ import Card from "../components/card/card";
 
 function Home() {
     return (
-        <div className="home">
+        <main className="home">
         <Banner imageBanner={homeImage} text="Chez vous, partout et ailleurs" />
         <div className="wrapper">
             {data.map(({id, title, cover}) => (
                 <Card key={id} id={id} title={title} cover={cover} />
             ))}
         </div>
-        </div>
+        </main>
 
     
     );

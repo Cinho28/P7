@@ -1,0 +1,19 @@
+@use "../styles/variables" as *;
+@use "../styles/mixin" as *;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: px-to-rem(1023);
+        width: 100%;
+        height: fit-content;
+        margin: px-to-rem(38) 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,47 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixin" as *;
+
+.categorie {
+    width: 100%;
+    font-family: $font;
+
+    &__wrapper {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: $primary-color;
+        font-weight: 700;
+        color: $white;
+        height: px-to-rem(54);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 px-to-rem(15);
+        border-radius: px-to-rem(5);
+    }
+    &__title {
+        font-size: px-to-rem(24);
+    }
+    &__content {
+        font-size: px-to-rem(18);
+        margin: px-to-rem(20) px-to-rem(20) px-to-rem(20) px-to-rem(20);
+        transition: transform 0.3s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        &--open {
+            max-height: px-to-rem(200); /* Une valeur assez grande pour tout contenir */
+            opacity: 1;
+        }
+    }
+    &__arrow {
+        width: px-to-rem(24);
+        height: px-to-rem(13);
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+        &--open {
+            transform: rotate(-180deg);
+        }
+    }
+}

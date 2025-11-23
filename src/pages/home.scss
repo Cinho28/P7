@@ -9,15 +9,15 @@
 }
 
 .wrapper {
-    max-width: $container-width;
+    box-sizing: border-box;
     width: 100%;
+    max-width: $container-width;
     background-color: $wrapper-background;
     border-radius: 25px;
+    padding: px-to-rem(40);
     margin: px-to-rem(43) 0 px-to-rem(50) 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: px-to-rem(60);
-    padding: px-to-rem(50) 0 px-to-rem(50) 0;
+    gap: px-to-rem(50);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
 }

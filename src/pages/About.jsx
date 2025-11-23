@@ -1,9 +1,22 @@
+import Banner from "../components/banner/Banner";
+import "./about.scss";
+import bannerimg from "../assets/montagnes.png";
+import about from "../data/about.json";
+import AboutContent from "../components/aboutContent/aboutContent";
+
 
 
 function About() {
     return (
-        
-            <div></div>
+           <main className="about">
+            <Banner text="" imageBanner={bannerimg} />
+            <div className="about__wrapper">
+            {about.map(({title, content}, index) => (
+                <AboutContent key={index} title={title} content={content} />
+            ))}
+            </div>
+
+           </main>
     );
 }
 export default About;
