@@ -2,7 +2,7 @@ import Banner from "../components/banner/Banner";
 import "./about.scss";
 import bannerimg from "../assets/montagnes.png";
 import about from "../data/about.json";
-import AboutContent from "../components/aboutContent/aboutContent";
+import Collapse from "../components/collapse/Collapse";
 
 
 
@@ -12,7 +12,7 @@ function About() {
             <Banner text="" imageBanner={bannerimg} />
             <div className="about__wrapper">
             {about.map(({title, content}, index) => (
-                <AboutContent key={index} title={title} content={content} />
+                <Collapse key={index} title={title} content={content} size="large" />
             ))}
             </div>
 

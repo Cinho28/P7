@@ -2,14 +2,16 @@
 @use "../../styles/mixin" as *;
 
 .header {
-    @include flex-center;
+    @include main-config;
     margin-top: 3rem;
 
     height: 68px;
     &__container {
+        box-sizing: border-box;
         display: flex;
         align-items: center;
-        width: $container-width;
+        width: 96%;
+        max-width: $container-width;
         justify-content: space-between;
     }
     &__logo {

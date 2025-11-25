@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
 
 @function px-to-rem($px) {
-    @return ($px / 16) * 1rem;
+    @return calc($px / 16 * 1rem);
 }
 
 // Couleurs principales

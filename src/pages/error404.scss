@@ -2,15 +2,9 @@
 @use "../styles/mixin" as *;
 
 .Error404 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include main-config;
     &__message {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include main-config;
         font-family: $font;
         color: $primary-color;
         &--title {

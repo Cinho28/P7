@@ -2,10 +2,9 @@
 @use "../../styles/mixin" as *;
 
 .banner {
-    width: 100%;
+    @include main-config;
+    width: 96%;
     max-width: $container-width;
-    @include flex-center;
-    flex-direction: column;
     position: relative;
     margin: px-to-rem(50) auto 0 auto;
     &__picture {
@@ -32,5 +31,15 @@
         text-align: center;
         text-shadow: px-to-rem(1) px-to-rem(1) px-to-rem(2) black;
         width: fit-content;
+    }
+}
+@include tablette {
+    .banner {
+        &__picture {
+            height: px-to-rem(150);
+        }
+        &__text {
+            font-size: px-to-rem(28);
+        }
     }
 }

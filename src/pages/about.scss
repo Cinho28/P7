@@ -2,10 +2,7 @@
 @use "../styles/mixin" as *;
 
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include main-config;
 
     &__wrapper {
         box-sizing: border-box;

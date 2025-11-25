@@ -1,0 +1,93 @@
+@use "../styles/variables" as *;
+@use "../styles/mixin" as *;
+
+.info {
+    @include main-config;
+    &__wrapper {
+        box-sizing: border-box;
+        width: 96%;
+        max-width: $container-width;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-family: $font;
+    }
+    &__title {
+        color: $primary-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+        width: fit-content;
+    }
+    &__location {
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 400;
+        margin: px-to-rem(8) 0 px-to-rem(16) 0;
+        width: fit-content;
+    }
+    &__tag-wrapper {
+        display: flex;
+        gap: px-to-rem(15);
+        width: fit-content;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: px-to-rem(10);
+        width: fit-content;
+    }
+    &__tag {
+        background-color: $primary-color;
+        color: $white;
+        width: px-to-rem(150);
+        height: px-to-rem(28);
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    &__host {
+        display: flex;
+        gap: px-to-rem(20);
+        &--name {
+            display: block;
+            height: px-to-rem(50);
+            width: px-to-rem(80);
+            font-size: 18px;
+            font-weight: 500;
+            color: $primary-color;
+            text-align: right;
+            align-self: center;
+        }
+        &--picture {
+            width: px-to-rem(64);
+            height: px-to-rem(64);
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: px-to-rem(300);
+        gap: px-to-rem(10);
+        height: fit-content;
+    }
+    &__dropdowns {
+        margin-top: px-to-rem(20);
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: $container-width;
+        justify-content: space-between;
+        gap: px-to-rem(20);
+    }
+}
