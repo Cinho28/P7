@@ -19,14 +19,14 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
         border-radius: px-to-rem(25);
     }
     &__text {
         position: absolute;
-        color: $white;
+        color: $tertiary-color;
         font-family: $font;
-        font-size: px-to-rem(48);
+        font-size: 48px;
         font-weight: 700;
         text-align: center;
         text-shadow: px-to-rem(1) px-to-rem(1) px-to-rem(2) black;
@@ -39,7 +39,37 @@
             height: px-to-rem(150);
         }
         &__text {
-            font-size: px-to-rem(28);
+            font-size: 28px;
+        }
+    }
+}
+
+@include mobile {
+    .banner {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 px-to-rem(20);
+        margin: 0;
+        &__picture {
+            height: px-to-rem(120);
+            border-radius: px-to-rem(10);
+        }
+        &__overlay {
+            width: auto;
+            left: px-to-rem(20);
+            right: px-to-rem(20);
+            border-radius: px-to-rem(10);
+        }
+        &__text {
+            display: flex;
+            align-items: center;
+            max-width: 70%;
+            width: px-to-rem(225);
+            height: px-to-rem(45);
+            font-size: 24px;
+            text-align: left;
+            left: px-to-rem(40);
+            font-size: 24px;
         }
     }
 }

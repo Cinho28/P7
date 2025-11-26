@@ -25,3 +25,11 @@
         padding: px-to-rem(20);
     }
 }
+
+@include mobile {
+    .wrapper {
+        grid-template-columns: 1fr;
+        background-color: $tertiary-color;
+        padding: 0 px-to-rem(20);
+    }
+}

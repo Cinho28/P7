@@ -37,8 +37,34 @@
         bottom: px-to-rem(15);
         font-size: 18px;
         font-weight: 500;
-        color: $white;
+        color: $tertiary-color;
         width: fit-content;
         font-family: $font;
+    }
+}
+
+@include mobile {
+    .carrousel {
+        height: px-to-rem(255);
+        padding: 0 px-to-rem(20);
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        &__img {
+            border-radius: px-to-rem(10);
+        }
+        &____arrow--left {
+            width: px-to-rem(30);
+            height: px-to-rem(45);
+            left: px-to-rem(20);
+        }
+        &____arrow--right {
+            width: px-to-rem(30);
+            height: px-to-rem(45);
+            right: px-to-rem(20);
+        }
+        &__counter {
+            display: none;
+        }
     }
 }

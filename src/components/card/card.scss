@@ -10,14 +10,15 @@
 
     &__cover {
         width: 100%;
-        height: px-to-rem(340);
+        height: 100%;
         border-radius: px-to-rem(10);
         object-fit: cover;
     }
     &__title {
-        font: px-to-rem(18) $font;
+        font-size: 18px;
+        font-family: $font;
 
-        color: $white;
+        color: $tertiary-color;
         position: absolute;
         font-size: large;
         margin: 0;
@@ -26,5 +27,19 @@
         left: px-to-rem(20);
         width: 50%;
         font-weight: bold;
+    }
+}
+
+@include mobile {
+    .card {
+        height: px-to-rem(255);
+        &__cover {
+            border-radius: px-to-rem(10);
+            height: 100%;
+        }
+        &__title {
+            bottom: px-to-rem(10);
+            left: px-to-rem(10);
+        }
     }
 }

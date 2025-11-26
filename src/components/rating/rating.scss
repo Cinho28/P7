@@ -1,7 +1,21 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixin" as *;
 .rating {
+    box-sizing: border-box;
     display: flex;
-    width: 100%;
+    width: fit-content;
     justify-content: flex-end;
+    &__star {
+        width: px-to-rem(36);
+        height: px-to-rem(36);
+    }
+}
+@include mobile {
+    .rating {
+        justify-content: flex-start;
+        &__star {
+            width: px-to-rem(24);
+            height: px-to-rem(24);
+        }
+    }
 }

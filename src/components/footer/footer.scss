@@ -4,8 +4,8 @@
 .footer {
     background-color: $secondary-color;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 12rem;
     display: flex;
     justify-content: center;
@@ -17,16 +17,33 @@
     }
     &__logo-container {
         @include main-config;
-        margin: 2rem 0rem 2rem 0rem;
+        margin: px-to-rem(32) 0px px-to-rem(32) 0px;
     }
     &__logo {
-        width: 130px;
-        height: 45px;
+        width: px-to-rem(130);
+        height: px-to-rem(45);
     }
     &__copyright {
         font-family: $font;
         font-size: 24px;
-        color: $white;
+        color: $tertiary-color;
         margin: 0;
+    }
+}
+
+@include mobile {
+    .footer {
+        height: px-to-rem(150);
+        &__container {
+            width: 100%;
+            padding: 0 px-to-rem(20);
+        }
+        &__logo {
+            width: px-to-rem(100);
+            height: px-to-rem(35);
+        }
+        &__copyright {
+            font-size: 14px;
+        }
     }
 }

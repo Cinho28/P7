@@ -15,7 +15,7 @@
         justify-content: space-between;
     }
     &__logo {
-        width: 210px;
+        width: px-to-rem(210);
         height: auto;
         &--content {
             width: 100%;
@@ -25,7 +25,7 @@
     &__nav {
         display: flex;
         align-items: center;
-        gap: 4rem;
+        gap: px-to-rem(40);
 
         &--link {
             font-family: $font;
@@ -35,6 +35,30 @@
             font-weight: 500;
             &.active {
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        margin: px-to-rem(20);
+        &__container {
+            width: 100%;
+        }
+        &__logo {
+            width: px-to-rem(145);
+            &--content {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__nav {
+            gap: 2rem;
+
+            &--link {
+                font-size: 12px;
+                width: fit-content;
             }
         }
     }

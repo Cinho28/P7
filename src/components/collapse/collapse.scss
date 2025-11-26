@@ -7,18 +7,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    max-width: px-to-rem(1023);
 
+    padding: 0 px-to-rem(20);
     &--small {
         width: px-to-rem(500);
+    }
+    &--large {
+        width: 100%;
     }
 
     &__wrapper {
         box-sizing: border-box;
         background-color: $primary-color;
         font-weight: 700;
-        color: $white;
+        color: $tertiary-color;
         height: px-to-rem(54);
         display: flex;
         align-items: center;
@@ -31,25 +33,26 @@
         }
     }
     &__title {
-        font-size: px-to-rem(24);
+        font-size: 24px;
         margin: 0;
     }
     &__content {
-        font-size: px-to-rem(18);
+        font-size: 18px;
         margin: px-to-rem(20) px-to-rem(20) px-to-rem(20) px-to-rem(20);
         transition: transform 0.3s ease-in-out;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
         transition: all 0.3s ease;
+        text-align: left;
 
         &--open-large {
-            max-height: px-to-rem(200); /* Une valeur assez grande pour tout contenir */
+            max-height: px-to-rem(200);
             opacity: 1;
             max-width: 100%;
         }
         &--open-small {
-            max-height: px-to-rem(400); /* Une valeur assez grande pour tout contenir */
+            max-height: px-to-rem(400);
             opacity: 1;
             max-width: 100%;
         }
@@ -68,7 +71,34 @@
 @include tablette {
     .categorie {
         &--small {
-            width: 96%;
+            width: 100%;
+        }
+    }
+}
+@include mobile {
+    .categorie {
+        &__wrapper {
+            height: px-to-rem(30);
+        }
+        &--small {
+            width: 100%;
+            padding: 0;
+        }
+        &__title {
+            font-size: 12px;
+        }
+        &__content {
+            font-size: 12px;
+            &--open-large {
+                max-height: px-to-rem(300); /* Ajuster pour mobile */
+            }
+            &--open-small {
+                max-height: px-to-rem(500); /* Ajuster pour mobile */
+            }
+        }
+        &__arrow {
+            width: px-to-rem(16);
+            height: px-to-rem(9);
         }
     }
 }
