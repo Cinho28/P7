@@ -7,7 +7,7 @@
         box-sizing: border-box;
         width: 100%;
         max-width: $container-width;
-
+        padding: 0 px-to-rem(20);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
