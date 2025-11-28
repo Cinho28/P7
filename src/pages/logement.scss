@@ -5,7 +5,7 @@
     @include main-config;
     &__wrapper {
         box-sizing: border-box;
-        width: 96%;
+        width: 100%;
         max-width: $container-width;
 
         display: flex;
@@ -83,19 +83,19 @@
     &__dropdowns {
         margin-top: px-to-rem(20);
         box-sizing: border-box;
-        width: 100%;
+        width: 96%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         max-width: $container-width;
         justify-content: space-between;
-        gap: px-to-rem(20);
+        gap: px-to-rem(76);
     }
 }
 
 @include mobile {
     .info {
-        padding: px-to-rem(15) px-to-rem(20);
+        padding: px-to-rem(15) px-to-rem(20) 0 px-to-rem(20);
         &__wrapper {
             width: 100%;
             flex-direction: column;
@@ -114,7 +114,8 @@
         }
         &__dropdowns {
             flex-direction: column;
-            gap: px-to-rem(10);
+            gap: 0;
+            width: 100%;
         }
         &__title {
             font-size: 24px;

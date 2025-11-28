@@ -1,8 +1,8 @@
-import Banner from "../components/banner/Banner";
+import Banner from "../components/Banner";
 import "./about.scss";
 import bannerimg from "../assets/montagnes.png";
 import about from "../data/about.json";
-import Collapse from "../components/collapse/Collapse";
+import Collapse from "../components/Collapse";
 
 
 

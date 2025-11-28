@@ -1,8 +1,8 @@
-import Banner from "../components/banner/Banner";
+import Banner from "../components/Banner";
 import homeImage from "../assets/falaise.jpg";
 import "./home.scss";
 import data from "../data/data.json";
-import Card from "../components/card/Card";
+import Card from "../components/Card";
 
 
 function Home() {

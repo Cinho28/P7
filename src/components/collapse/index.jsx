@@ -12,7 +12,7 @@ function Collapse({title, content, size }) {
 
     return (
         
-        <div className={`categorie categorie--${size}`} >
+        <div className={`categorie`} >
             <div className={`categorie__wrapper categorie__wrapper--${size}`} onClick={toggleOpen}>
             <h2 className="categorie__title">{title}</h2>
             <img src={arrow} alt="arrow" className={isOpen ? "categorie__arrow categorie__arrow--open" : "categorie__arrow"} />

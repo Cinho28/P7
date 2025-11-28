@@ -33,17 +33,21 @@
 
 @include mobile {
     .footer {
-        height: px-to-rem(150);
+        height: px-to-rem(300);
+        align-items: center;
+        text-align: center;
+
         &__container {
             width: 100%;
             padding: 0 px-to-rem(20);
         }
         &__logo {
-            width: px-to-rem(100);
-            height: px-to-rem(35);
+            width: px-to-rem(122);
+            height: px-to-rem(40);
         }
         &__copyright {
             font-size: 14px;
+            width: px-to-rem(133);
         }
     }
 }

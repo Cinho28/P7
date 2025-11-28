@@ -1,15 +1,17 @@
 import "./logement.scss";
-import Carousel from "../components/carrousel/Carrousel";
+import Carousel from "../components/Gallery";
 import data from "../data/data.json";
-import { useParams, Navigate } from "react-router-dom";
-import Rating from "../components/rating/Rating";
-import Collapse from "../components/collapse/Collapse";
+import { useParams} from "react-router-dom";
+import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
+import Error404 from "./Error404.jsx";
+
 
 function Logement() {
     const { id } = useParams();
     const logement = data.find((item) => item.id === id);
     if (!logement) {
-        return <Navigate to={<Error404/>} />;
+        return <Error404 />;
     }
     else {
         

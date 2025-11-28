@@ -26,3 +26,40 @@
         font-weight: 500;
     }
 }
+
+@include tablette {
+    .Error404 {
+        &__message {
+            &--title {
+                font-size: 180px;
+                margin-top: px-to-rem(50);
+                margin-bottom: px-to-rem(100);
+            }
+            &--text {
+                font-size: 28px;
+                margin-bottom: px-to-rem(100);
+            }
+        }
+    }
+}
+
+@include mobile {
+    .Error404 {
+        &__message {
+            &--title {
+                font-size: 96px;
+                margin-top: px-to-rem(100);
+                margin-bottom: px-to-rem(100);
+            }
+            &--text {
+                font-size: 18px;
+                margin-bottom: px-to-rem(100);
+                width: px-to-rem(260);
+            }
+            &__link {
+                font-size: 14px;
+                margin-bottom: px-to-rem(100);
+            }
+        }
+    }
+}

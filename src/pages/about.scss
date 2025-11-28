@@ -12,5 +12,22 @@
         margin: px-to-rem(38) 0 0 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@include tablette {
+    .about {
+        &__wrapper {
+            padding: 0 px-to-rem(20);
+        }
+    }
+}
+
+@include mobile {
+    .about {
+        &__wrapper {
+            padding: 0 px-to-rem(20);
+        }
     }
 }
