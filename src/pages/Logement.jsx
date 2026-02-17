@@ -2,7 +2,7 @@ import "./logement.scss";
 import Carousel from "../components/Gallery";
 import data from "../data/data.json";
 import { useParams} from "react-router-dom";
-import Rating from "../components/Rating";
+import Rating from "../components/rating";
 import Collapse from "../components/Collapse";
 import Error404 from "./Error404.jsx";
 
