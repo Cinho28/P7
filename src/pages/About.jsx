@@ -2,7 +2,7 @@ import Banner from "../components/banner";
 import "./about.scss";
 import bannerimg from "../assets/montagnes.png";
 import about from "../data/about.json";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/collapse";
 
 
 
